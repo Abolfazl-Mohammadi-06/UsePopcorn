@@ -1,15 +1,16 @@
 # 🍿 usePopcorn
 
-A React application built as part of my React learning journey. The app allows users to search for movies using the OMDb API, view detailed movie information, and create a temporary watchlist.
+A React application built as part of my React learning journey. The app allows users to search for movies using the OMDb API, view detailed movie information, rate movies, and create a persistent watchlist.
 
 ## ✨ Features
 
 - 🔍 Search movies by title
 - 🎬 View detailed information about each movie
 - ⭐ Rate movies with a custom star rating component
-- 📋 Add movies to a temporary watchlist
+- 📋 Create and manage a personal watchlist
+- 💾 Persist the watchlist using `localStorage`
 - 🗑️ Remove movies from the watchlist
-- ⌨️ Close movie details with the Escape key
+- ⌨️ Close movie details with the **Escape** key
 - 📱 Responsive layout
 - ⚡ Loading and error handling
 - 📝 Dynamic document title based on the selected movie
@@ -21,6 +22,7 @@ A React application built as part of my React learning journey. The app allows u
 - CSS
 - OMDb API
 - React Hooks (`useState`, `useEffect`)
+- Browser Local Storage
 
 ## 📚 What I Learned
 
@@ -32,24 +34,24 @@ This project was created for learning purposes while studying React. During deve
 - Working with asynchronous JavaScript
 - Conditional rendering
 - Component composition
-- Custom React Hooks concepts
+- Persisting application state with `localStorage`
 - Cleanup functions in `useEffect`
-- AbortController for cancelling API requests
+- Using `AbortController` to cancel API requests
 - Keyboard event handling
 - Building reusable React components
 
 ## ⚠️ Note
 
-The watchlist is **temporary** and is stored only in the application's state. It will be cleared when the page is refreshed or the browser is closed.
+The watchlist is automatically saved in the browser using **localStorage**, so it remains available even after refreshing the page or reopening the application.
 
 ## 🚀 Live Demo
 
 https://abolfazl-mohammadi-06.github.io/UsePopcorn/
+
 ## 📷 Screenshot
 
-![App preview](./assets/img.png)
-
+![App Preview](./assets/img.png)
 
 ## 🙏 Acknowledgements
 
-This project was built as part of my React learning journey and uses data provided by the **OMDb API**.
+This project was built as part of my React learning journey while following **Jonas Schmedtmann's React course**. Movie data is provided by the **OMDb API**.
