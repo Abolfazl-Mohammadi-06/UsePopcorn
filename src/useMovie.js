@@ -21,6 +21,7 @@ export function useMovie(query) {
                     {signal: controller.signal});
 
 
+
                 if (!res.ok) throw new Error("something went wrong");
                 const data = await res.json();
 
