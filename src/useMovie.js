@@ -22,6 +22,9 @@ export function useMovie(query) {
 
 
 
+
+                // WE HAD PROBLEM
+
                 if (!res.ok) throw new Error("something went wrong");
                 const data = await res.json();
 
